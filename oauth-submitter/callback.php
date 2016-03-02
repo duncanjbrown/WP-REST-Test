@@ -34,12 +34,12 @@ try {
 
     parse_str($params);
 
-	$credentials = [
-		'consumer_key' => 'ONptPZtywAbn',
-		'consumer_secret' => 'MvuODbEx6Fyhwb0eBF5t9fulrcwDuCSJUDE8FmYfkNxyMf3k',
+	var_dump($params);
+
+	$credentials = array_merge( $consumer_credentials, [
 		'token' => $oauth_token,
 		'token_secret' => $oauth_token_secret
-	];
+	] );
 
 	file_put_contents( 'access.json', json_encode( $credentials ) );
 
