@@ -36,9 +36,9 @@ try {
 
 	$credentials = [
 		'consumer_key' => 'ONptPZtywAbn',
-	    'consumer_secret' => 'MvuODbEx6Fyhwb0eBF5t9fulrcwDuCSJUDE8FmYfkNxyMf3k',
-		'oauth_token' => $oauth_token,
-		'oauth_token_secret' => $oauth_token_secret
+		'consumer_secret' => 'MvuODbEx6Fyhwb0eBF5t9fulrcwDuCSJUDE8FmYfkNxyMf3k',
+		'token' => $oauth_token,
+		'token_secret' => $oauth_token_secret
 	];
 
 	file_put_contents( 'access.json', json_encode( $credentials ) );
