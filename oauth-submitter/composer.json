@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "symfony/var-dumper": "^3.0"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6",
+        "guzzlehttp/oauth-subscriber": "^0.3.0"
+    }
+}

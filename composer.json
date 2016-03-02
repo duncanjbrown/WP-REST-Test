@@ -34,6 +34,10 @@
     {
       "type": "git",
       "url": "https://github.com/duncanjbrown/wp-api-meta-endpoints.git"
+    },
+    {
+      "type": "git",
+      "url": "https://github.com/WP-API/OAuth1.git"
     }
   ],
   "require": {
@@ -43,7 +47,8 @@
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
     "wp-api/wp-api": "2.0-beta12",
-    "wp-api/wp-api-meta-endpoints": "dev-installer-path"
+    "wp-api/wp-api-meta-endpoints": "dev-installer-path",
+    "wp-api/oauth1": "dev-master"
   },
   "extra": {
     "installer-paths": {

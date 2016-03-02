@@ -10,7 +10,11 @@
  * Domain Path: /languages
  * @package Rest-testing
  */
-
+add_filter( 'allowed_redirect_hosts' , 'my_allowed_redirect_hosts' , 10 );
+function my_allowed_redirect_hosts($content){
+    $content[] = 'localhost:3030';
+    return $content;
+}
 add_action('init', function() {
 	register_post_type(
 		'custom_post_type',

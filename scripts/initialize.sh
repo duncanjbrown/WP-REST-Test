@@ -6,7 +6,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   wp db reset --yes
   wp core install --url="http://localhost:8080" --title="WP REST Test" --admin_user="admin" --admin_password="admin" --admin_email="null@void.com"
-  wp plugin activate json-rest-api json-rest-api-meta-endpoints
+  wp plugin activate json-rest-api json-rest-api-meta-endpoints oauth1
 	wp rewrite structure "/%post%/"
   wp post generate --post_type="post"
   wp post generate --post_type="custom_post_type"
