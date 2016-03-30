@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-wp server
+wp server &
 pkill -f "php -S localhost:3030"
 echo
 echo "=> Creating Oauth account..."
