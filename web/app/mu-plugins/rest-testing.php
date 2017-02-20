@@ -41,7 +41,6 @@ add_action('init', function() {
 
 // Enable postmeta embedding for WP-API v > 2.0b12
 
-
 add_action( 'rest_api_init', function() {
 
 	$post_types = get_post_types( array( 'public' => true ), 'names' );
