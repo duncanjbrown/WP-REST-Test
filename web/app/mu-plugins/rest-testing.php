@@ -38,3 +38,29 @@ add_action('init', function() {
 		),
 	) );
 });
+
+// Enable postmeta embedding for WP-API v > 2.0b12
+
+
+add_action( 'rest_api_init', function() {
+
+	$post_types = get_post_types( array( 'public' => true ), 'names' );
+
+	foreach( $post_types as $post_type ) {
+		if ( post_type_supports( $post_type, 'custom-fields' ) ) {
+			add_filter( "rest_prepare_${post_type}", 'prepare_meta_link_for_post_type' , 10, 3);
+		}
+	}
+
+	function prepare_meta_link_for_post_type( $response, $post, $request ) {
+		$post_type = get_post_type_object( $post->post_type );
+		$rest_base = ! empty( $post_type->rest_base ) ? $post_type->rest_base : $post_type->name;
+		$base = sprintf( '/wp/v2/%s/', $rest_base );
+		$response->add_link(
+			'https://api.w.org/meta',
+			rest_url( $base . $post->ID . '/meta' ),
+			array( 'embeddable' => true )
+		);
+		return $response;
+	}
+});
