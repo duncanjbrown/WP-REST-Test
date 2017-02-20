@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "66ede277cc9c30beee7eb2712f1a0fdd",
-    "content-hash": "70eee8811e4945b58c371e53df5d07e1",
+    "content-hash": "1de27a5b0a8a5acae2e80db1e9291a2c",
     "packages": [
         {
             "name": "composer/installers",
@@ -105,20 +104,20 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-13 19:46:30"
+            "time": "2016-04-13T19:46:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.3",
+            "version": "4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b327faa6feea3a4058178dee7ac8b512bd957e92",
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92",
                 "shasum": ""
             },
             "require": {
@@ -142,7 +141,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-06-21 16:31:21"
+            "time": "2016-12-06T18:46:46+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -190,7 +189,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2015-06-11T15:15:30+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -232,20 +231,20 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2016-05-08T17:14:32+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -257,7 +256,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -282,7 +281,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01T10:05:43+00:00"
         },
         {
             "name": "wp-api/oauth1",
@@ -290,7 +289,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WP-API/OAuth1.git",
-                "reference": "3872b95a005ae452348b9f3f22be4780c54ad864"
+                "reference": "fe7f452abda47c831b87bac8af88798731f0b04a"
             },
             "type": "wordpress-plugin",
             "license": [
@@ -303,46 +302,7 @@
                 }
             ],
             "description": "OAuth 1.0a Server for WordPress",
-            "time": "2016-07-16 15:21:49"
-        },
-        {
-            "name": "wp-api/wp-api",
-            "version": "2.0-beta12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WP-API/WP-API.git",
-                "reference": "0549f8e88ff29444ad3449a956cf43c1f701a57d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WP-API/WP-API/zipball/0549f8e88ff29444ad3449a956cf43c1f701a57d",
-                "reference": "0549f8e88ff29444ad3449a956cf43c1f701a57d",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "require-dev": {
-                "squizlabs/php_codesniffer": "2.3.4",
-                "wp-coding-standards/wpcs": "0.6.0"
-            },
-            "type": "wordpress-plugin",
-            "extra": {
-                "installer-name": "json-rest-api"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL2+"
-            ],
-            "authors": [
-                {
-                    "name": "WP-API Team",
-                    "homepage": "http://wp-api.org/"
-                }
-            ],
-            "description": "Access your WordPress site's data through an easy-to-use HTTP REST API.",
-            "homepage": "http://wp-api.org/",
-            "time": "2016-02-09 16:40:08"
+            "time": "2016-10-17 18:06:52"
         },
         {
             "name": "wp-api/wp-api-meta-endpoints",
@@ -393,7 +353,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wp-api/wp-api": 10,
         "wp-api/wp-api-meta-endpoints": 20,
         "wp-api/oauth1": 20
     },
